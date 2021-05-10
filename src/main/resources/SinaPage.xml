@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map><!-- 针对特别元素可以自定义元素显示等待时间，否则默认20秒 -->
+	<page pageName = "测试工具公共参数">
+	    <locator type="id" value="selectEnv">请选择</locator>
+	    <locator type="xpath" value="//*[@id='selectEnv']/option[2]">测试环境</locator>
+		<locator type="xpath" value="//*[@id='selectEnv']/option[3]">联调环境</locator>
+		<locator type="xpath" value="//*[@id='selectEnv']/option[4]">生产环境</locator>
+		<locator type="id" value="selectEncryptKey">请选择公钥</locator>
+		<locator type="xpath" value=".//*[@id='selectEncryptKey']/option[2]">测试环境加密公钥</locator>
+		<locator type="xpath" value=".//*[@id='selectEncryptKey']/option[3]">联调环境加密公钥</locator>
+		<locator type="xpath" value=".//*[@id='selectEncryptKey']/option[4]">生产环境加密公钥</locator>
+		<locator type="css" value="input[value='生成请求时间']">生成请求时间</locator>
+		<locator type="css" value="input[name='partner_id']">partner_id</locator>
+		<locator type="css" value="input[name='identity_id']">identity_id</locator>
+		<locator type="xpath" value="//button[text()='发送请求']">发送请求</locator>  
+	</page>
+	
+     <page pageName="收银台主页">
+		<locator type="xpath" value="//li[text()='绑卡支付']">绑卡支付</locator>
+		<locator type="xpath" value="//li[text()='网银支付']">网银支付</locator>
+		<locator type="xpath" value="//li[text()='快捷支付']">快捷支付</locator>
+		<locator type="xpath" value="//li[text()='普通账户']">普通账户</locator> 
+		<locator type="xpath" value="//li[text()='网银转账']">转账</locator>
+		<locator type="xpath" value="//li[text()='存钱罐账户']">存钱罐账户</locator>
+		<locator type="xpath" value="//li[contains(text(),'银行账户')]">银行账户</locator> 
+		<locator type="css" timeOut="6" value="img[src$='/close-eab35f2c1a.png?']">广告窗</locator>
+		<locator type="xpath" value="//a[text()='订单详情']/i">订单详情</locator>
+	    <locator type="css" value="a[href^='helper.html?ft=86a0081b-']">公告</locator>
+	    <locator type="xpath" value="//a[text()='帮助中心']">帮助中心</locator>
+	    <locator type="css" value="i.arrow">账户下拉</locator>	
+	    <locator type="xpath" value="//a[text()='安全中心']">安全中心</locator>
+	</page>
+	 
+	<page pageName="托管充值">
+		<locator type="css" value="input[value='生成交易订单号']">生成交易订单号</locator>
+		<locator type="css" value="input[placeholder='交易订单号']">交易订单号</locator>
+		<locator type="css" value="input[name='amount']">amount</locator>
+		<locator type="css" value="input[name='user_fee']">user_fee</locator>
+		<locator type="css" value="input[name='pay_method']">pay_method</locator>
+		<locator type="xpath" value=".//*[@id='account_type']">account_type</locator>	
+	</page> 
+	
+	<page pageName="托管代收">
+		<locator type="css" value="input[value='生成交易订单号']">生成交易订单号</locator>
+		<locator type="css" value="input[placeholder='交易订单号']">交易订单号</locator>
+		<locator type="id" value="is_safe_card_support">is_safe_card_support</locator>
+		<locator type="css" value="input[name='pay_method']">pay_method</locator>
+		<locator type="xpath" value="//*[@id='payer_id']">payer_id</locator>
+	</page>
+
+	<page pageName="预授权">
+	   	<locator type="css" value="input[value='生成交易订单号']">生成交易订单号</locator>
+	   	<locator type="xpath" value=".//*[@id='payer_id']">payer_id</locator>
+	   	<locator type="css" value="input[placeholder='交易订单号']">交易订单号</locator>
+		<locator type="xpath" value=".//*[@id='pay_method']">pay_method</locator>
+	</page>
+
+	<page pageName="托管提现">
+		<locator type="css" value="input[value='生成交易订单号']">生成交易订单号</locator>
+		<locator type="css" value="input[placeholder='交易订单号']">交易订单号</locator>
+		<locator type="css" value="input[name='amount']">amount</locator>
+		<locator type="css" value="input[name='withdraw_mode']">withdraw_mode</locator>
+		<locator type="xpath" value=".//*[@id='account_type']">account_type</locator>	
+	</page>
+
+	 <page pageName="转账">
+	   	<locator type="css" value="input[value='生成交易订单号']">生成交易订单号</locator>
+	   	<locator type="css" value="input[placeholder='交易订单号']">交易订单号</locator>
+		<locator type="xpath" value="//*[@name='payer_identity_id']">payer_identity_id</locator>
+		<locator type="xpath" value="//*[@name='payee_identity_id']">payee_identity_id</locator>
+		<locator type="xpath" value="//*[@id='payer_account_type']">payer_account_type</locator>
+		<locator type="xpath" value="//*[@id='payee_account_type']">payee_account_type</locator>
+		<locator type="id" value="transfer_mode">transfer_mode</locator>
+		<locator type="xpath" value="//*[@id='amount']">amount</locator>
+	</page>
+	
+	<page pageName="预授权">
+	   	<locator type="css" value="input[value='生成交易订单号']">生成交易订单号</locator>
+	   	<locator type="xpath" value=".//*[@id='payer_id']">payer_id</locator>
+	   	<locator type="css" value="input[placeholder='交易订单号']">交易订单号</locator>
+		<locator type="xpath" value=".//*[@id='pay_method']">pay_method</locator>
+	</page>
+
+
+
+
+<!-- 接口界面和收银台页面分界线 -->
+	
+	<page pageName="快捷支付">
+		<locator type="xpath" value=".//*[@id='QuickPay']/div[5]/div[1]/a">短信获取</locator>  
+		<locator type="xpath" value=".//*[@id='J-validateCodeQuickPayTab']">验证码</locator>
+		<locator type="xpath" value=".//*[@id='J-mobileQuickPayTab']">手机号</locator>
+	 	<locator type="xpath" value=".//*[@id='J-payPwdQuickPayTab']">充值支付密码</locator> 
+	 	<locator type="xpath" value="//*[@id='J-payPwdQuickPayTab']">代收支付密码</locator> 
+	    <locator type="xpath" value=".//*[@id='QuickPay']/div[8]/div[1]/button">完成支付</locator>
+	    <locator type="xpath" value=".//*[@id='J-bankCardNo']">储蓄卡卡号</locator>
+		<locator type="xpath" value="//button[text()='下一步']">下一步</locator>
+		<locator type="xpath" value="//*[@class='btn-link J-loadAgreement']">用户协议</locator>
+		<locator type="xpath" value="//*[contains(@src,'https://i1.weibopay.com/page/images/close-29d6e35d1b.png')]">关闭协议</locator>
+	</page>
+	
+	<page pageName="绑卡支付">
+	    <locator type="xpath" value=".//*[@id='BindingPay']/div[3]/div[1]/a">短信获取</locator> 
+		<locator type="xpath" value=".//*[@id='J-validateCodeBindingPay']">验证码</locator>
+	    <locator type="xpath" value="//*[@id='J-payPwdBindingPay']">代收支付密码</locator> 
+		<locator type="xpath" value="//*[@id='BindingPay']/div[5]/div/button">代收完成支付</locator>
+	    <locator type="css" value="input[data-vfield='支付密码']">充值支付密码</locator> 
+	    <locator type="xpath" value=".//*[@id='BindingPay']/div[6]/div/button">充值完成支付</locator>	
+	</page>
+		
+	<page pageName="网银支付">
+		<locator type="css" value="img[src$='banks/TESTBANK.gif']">测试银行</locator>
+		<locator type="xpath" value="//button[text()='去网银充值']">去网银充值</locator>
+		<locator type="css" value="input[value ='验签成功']">验签成功</locator>
+		<locator type="xpath" value="//button[text()='去网银支付']">去网银支付</locator>
+		<locator type="css" value="li[data-bankcode='TESTBANK'] > img[src$='TESTBANK2B.gif?']">企业测试银行</locator>
+	</page>
+	
+	<page pageName="普通账户">
+		<locator type="xapth" value="//*[@id='Normal']/div[2]/div[1]/a">短信获取</locator>
+		<locator type="xpath" value="//*[@id='J-validateCode_Normal']">验证码</locator>
+	    <locator type="xpath" value=".//*[@id='J-payPwdBASIC']">代收支付密码</locator> 
+		<locator type="xpath" value=".//*[@id='BASIC']/div[2]/div/button">代收完成支付</locator>
+		<locator type="xpath" value="//*[@id='J-payPwd_TRANSFER']">转账支付密码</locator>
+		<locator type="xpath" value="//button[text()='完成转账']">转账完成支付</locator>
+		<locator type="xpath" value="//*[@id='J-payPwd_Normal']">预授权支付密码</locator> 
+		<locator type="xpath" value="//*[@id='Normal']/div[2]/div/button">预授权完成支付</locator>
+	</page>
+	
+	<page pageName="存钱罐账户">
+		<locator type="xapth" value="//*[@id='Savings']/div[2]/div[1]/a">短信获取</locator>
+		<locator type="xpath" value="//*[@id='J-validateCode_Savings']">验证码</locator>
+		<locator type="xpath" value="//*[@id='J-payPwd_Savings']">预授权支付密码</locator> 
+		<locator type="xpath" value="//*[@id='Savings']/div[3]/div/button">预授权完成支付</locator>
+		<locator type="xpath" value=".//*[@id='J-payPwdSAVING_POT']">代收支付密码</locator> 
+		<locator type="xpath" value=".//*[@id='SAVING_POT']/div[2]/div/button">代收完成支付</locator>
+		<locator type="xpath" value="//*[@id='J-payPwd_TRANSFER']">转账支付密码</locator>
+		<locator type="xpath" value="//button[text()='完成转账']">转账完成支付</locator>
+	</page>
+	
+	<page pageName="银行账户">
+		<locator type="xapth" value="//*[@id='Normal']/div[2]/div[1]/a">短信获取</locator>
+		<locator type="xpath" value="//*[@id='J-validateCode_Normal']">验证码</locator>
+	    <locator type="xpath" value=".//*[@id='J-payPwdBANK']">代收支付密码</locator> 
+		<locator type="xpath" value=".//*[@id='BANK']/div[2]/div/button">代收完成支付</locator>
+		<locator type="xpath" value="//*[@id='J-payPwd_TRANSFER']">转账支付密码</locator>
+		<locator type="xpath" value="//button[text()='完成转账']">转账完成支付</locator>
+		<locator type="xpath" value="//*[@id='J-payPwd_Deposit']">预授权支付密码</locator> 
+		<locator type="xpath" value="//*[@id='Deposit']/div[3]/div/button">预授权完成支付</locator>
+	</page>
+	
+	<page pageName="忘记支付密码">
+	    <locator type="xpath" value="//a[text()='忘记支付密码？']">忘记支付密码</locator>
+	    <locator type="xpath" value=".//*[@id='step1']/div[3]/div[1]/a">短信获取</locator>
+		<locator type="css" value="input[data-vfield='验证码']">验证码</locator>
+		<locator type="xpath" value="//button[text()='下一步']">下一步</locator>
+	    <locator type="xpath" value="//a[text()='人工找回支付密码？']">人工找回支付密码</locator>
+	    <locator type="css" value="input[data-vfield='身份证号码']">身份证号码</locator>
+	    <locator type="xpath" value=".//*[@id='J-psw']">支付密码</locator>	
+	    <locator type="xpath" value=".//*[@id='check_psw']">确认密码</locator>
+	    <locator type="xpath" value=".//button[text()='完成']">完成</locator>
+	</page>
+	
+	<page pageName = "个人中心">
+	    <locator type="css" value="a[data-panel='pwd_manage']">支付密码查看</locator>
+	    <locator type="css" value="a[data-panel='mobile_manage']">认证手机查看</locator>
+		<locator type="css" value="a[data-panel='celebrity_manage']">实名认证查看</locator>
+	</page>
+	
+
+	
+	<page pageName="修改认证手机">
+		<locator type="xpath" value="//*[@id='step1']/div[2]/div[1]/a">短信获取1</locator>	
+		<locator type="xpath" value=".//*[@id='J-sms']">验证码1</locator>	
+		<locator type="xpath" value=".//*[@id='step1']/div[4]/div/button">下一步</locator>	
+		<locator type="xpath" value="//*[@id='J-mobile']">新手机号</locator>	
+		<locator type="xpath" value="//*[@id='step2']/div[2]/div[1]/a">短信获取2</locator>	
+		<locator type="xpath" value=".//*[@id='J-smsa']">验证码2</locator>	
+		<locator type="xpath" value=".//*[@id='step2']/div[3]/div/button">完成</locator>	
+	</page>
+	
+	<page pageName="找回认证手机">
+		<locator type="xpath" value=".//*[@id='J-payPwd']">支付密码</locator>	
+		<locator type="xpath" value="//*[@id='step1']/div[4]/div/button">下一步1</locator>	
+		<locator type="xpath" value=".//*[@id='J-ID']">身份证号码</locator>	
+		<locator type="xpath" value="//*[@id='step2']/div[3]/div/button">下一步2</locator>
+		<locator type="xpath" value="//*[@id='J-mobile']">新手机号</locator>
+		<locator type="xpath" value=".//*[@id='step3']/div[2]/div[1]/a">短信获取</locator>
+		<locator type="xpath" value="//*[@id='J-sms']">验证码</locator>	
+		<locator type="xpath" value=".//*[@id='step3']/div[3]/div/button">完成</locator>	
+	</page>
+	
+	<page pageName="修改支付密码">
+		<locator type="xpath" value=".//*[@id='pwd']">支付密码</locator>	
+		<locator type="xpath" value=".//*[@id='J-password']">新密码</locator>	
+		<locator type="xpath" value=".//*[@id='J-checkPwd']">确认密码</locator>	
+		<locator type="xpath" value=".//*[@id='modifyPwd']/div[5]/div/button">完成</locator>	
+	</page>
+	
+	<page pageName="找回支付密码">
+		<locator type="xpath" value=".//*[@id='step1']/div[3]/div[1]/a">短信获取</locator>	
+		<locator type="xpath" value=".//*[@id='J-sms']">验证码</locator>	
+		<locator type="xpath" value=".//*[@id='step1']/div[5]/div/button">下一步1</locator>	
+		<locator type="xpath" value=".//*[@id='J-ID']">身份证号码</locator>
+		<locator type="xpath" value=".//*[@id='step2']/div[4]/div/button">下一步2</locator>	
+		<locator type="xpath" value=".//*[@id='J-password']">新密码</locator>
+		<locator type="xpath" value=".//*[@id='J-checkPwd']">确认密码</locator>
+		<locator type="xpath" value=".//*[@id='step3']/div[4]/div/button">完成</locator>		
+	</page>
+	
+	<page pageName="验证支付密码">
+		<locator type="css" value="input[value='生成请求订单号']">生成请求订单号</locator>
+		<locator type="css" value="input[placeholder='交易订单号']">交易订单号</locator>
+		<locator type="xpath" value=".//*[@id='J-payPwd']">支付密码</locator>	
+		<locator type="xpath" value="//*[@id='pwdCheck']/div[3]/div/button">完成</locator>	
+	</page>
+	
+	<page pageName="设置支付密码">
+		<locator type="xpath" value="//*[@id='tela']">手机号</locator>
+		<locator type="xpath" value="//*[@id='set_pay_psw']/div[3]/div[1]/a">短信获取</locator>
+		<locator type="xpath" value="//*[@id='J-sms']">验证码</locator>	
+		<locator type="xpath" value="//*[@id='J-psw']">支付密码</locator>
+		<locator type="xpath" value="//*[@id='J-check_psw']">确认密码</locator>	
+		<locator type="xpath" value="//*[@id='set_pay_psw']/div[7]/div/button">完成</locator>				
+	</page> 
+	
+	 <page pageName="网银转账">
+        <locator type="xpath" value="/html/body/section[2]/div/div[2]/ul/li[1]/span">中国工商银行</locator>
+        <locator type="xpath" value=".//*[@id='Transfer']/form/div/div/button">下一步</locator>
+        <locator type="xpath" value=".//*[@id='J-transferTo']">网银转账下一步</locator>
+        <locator type="xpath" value=".//*[@id='J-transferInfo']/form/div/div[1]/a">去网银转账</locator>
+
+    </page>
+        <page pageName="解码url"> 
+		<locator type="xpath" value="//*input[@value='UrlDecode解码']">UrlDecode解码</locator>
+		<locator type="id" value="decodeContent">decodeContent</locator>
+		<locator type="css" value="input[value='UrlDecode解码']">UrlDecode解码</locator>
+		<locator type="id" value="shwoDecodeContent">shwoDecodeContent</locator>
+	</page>
+
+
+	<page pageName="获取子商户链接">
+		<locator type="css" value="input[id='url']">请求地址</locator>
+		<locator type="css" value="input[value='生成UID']">生成UID</locator>
+		<locator type="xpath" value="//*[@id='member_type']">member_type</locator>
+		<locator type="xpath" value="//*[@id='url_type']">url_type</locator>
+		<locator type="xpath" value="//*[@id='result']">pre</locator>
+		<locator type="xpath" value="//*[@id='imgCaptcha']">imgCaptcha</locator>
+	</page>
+
+
+	<page pageName="sina页面展示商户信息">
+		<locator type="xpath" value="//*[@id='identity_id']">identity_id</locator>
+		<locator type="xpath" value="//*[@id='resp_method']">resp_method</locator>
+		<locator type="tagName" value="pre">pre</locator>
+	</page>
+
+	<page pageName="创建标的页面">
+		<locator type="xpath" value="//*[@id='memo']">memo</locator>
+		<locator type="css" value="input[value='生成商户标的号']">生成商户标的号</locator>
+		<locator type="xpath" value="//*[@id='summary']">summary</locator>
+		<locator type="xpath" value="//*[@id='web_site_name']">web_site_name</locator>
+		<locator type="css" value="input[value='生成标的名称']">生成标的名称</locator>
+		<locator type="id" value="bid_type">标的类型</locator>
+		<locator type="xpath" value="//*[@id='bid_amount']">标的金额</locator>
+		<locator type="xpath" value="//*[@id='bid_year_rate']">年化收益率</locator>
+		<locator type="xpath" value="//*[@id='bid_duration']">借款期限</locator>
+		<locator type="id" value="repay_type">还款方式</locator>
+		<locator type="id" value="protocol_type">协议类型</locator>
+		<locator type="xpath" value="//*[@id='bid_product_type']">标的产品类型</locator>
+		<locator type="xpath" value="//*[@id='ecommend_inst']">推荐机构</locator>
+		<locator type="xpath" value="//*[@id='limit_min_bid_copys']">限定最低投标份数</locator>
+		<locator type="xpath" value="//*[@id='limit_per_copy_amount']">限定每份投标金额</locator>
+		<locator type="xpath" value="//*[@id='limit_max_bid_amount']">限定最多投标金额</locator>
+		<locator type="xpath" value="//*[@id='limit_min_bid_amount']">限定最少投标金额</locator>
+		<locator type="xpath" value="//*[@id='url2']">标的URL</locator>
+		<locator type="css" value="input[value='生成标的开始时间']">生成标的开始时间</locator>
+		<locator type="css" value="input[value='生成还款日期']">生成还款日期</locator>
+		<locator type="xpath" value="//*[@id='guarantee_method']">担保方式</locator>
+		<locator type="xpath" value="//*[@id='borrower_info_list']">borrower_info_list</locator>
+		<locator type="xpath" value="//*[@id='assure_party_list']">担保人列表</locator>
+		<locator type="xpath" value="//*[@id='int_pay_type']">MONTH_FIXED_DAY</locator>
+		<locator type="xpath" value="//*[@id='int_pay_day']">int_pay_day</locator>
+		<locator type="xpath" value="//*[@id='extend_param']">扩展信息</locator>
+		<locator type="xpath" value="//*[@id='raise_begin_date']">华瑞募集开始日期</locator>
+		<locator type="xpath" value="//*[@id='raise_end_date']">华瑞募集结束日期</locator>
+		<locator type="xpath" value="//*[@id='assure_account_identity']">华瑞担保方账户</locator>
+		<locator type="xpath" value="//*[@id='dealer_account_identity']">华瑞经销商账户</locator>
+		<locator type="xpath" value="//*[@id='repay_account_identity']">华瑞委托还款账户</locator>
+		<locator type="xpath" value="//*[@id='repay_identity_type']">委托还款人会员标识类型</locator>
+		<locator type="xpath" value="//*[@id='repay_identity_id']">委托还款人会员标识</locator>
+		<locator type="xpath" value="//*[@id='dealer_identity_type']">经销商会员标识类型</locator>
+		<locator type="xpath" value="//*[@id='dealer_identity_id']">经销商会员标识</locator>
+		<locator type="xpath" value="//*[@id='assure_identity_type']">担保方会员标识类型</locator>
+		<locator type="xpath" value="//*[@id='assure_identity_id']">担保方会员标识</locator>
+	</page>
+
+
+	<!-- 系统界面分割 -->
+	<page pageName = "BASIS页面">
+	   	<locator type="xpath" value="//*[@id='loginname']">loginname</locator>
+		<locator type="xpath" value="//*[@id='password']">password</locator>
+		<locator type="xpath" value="//*[@id='loginBtn']">登陆</locator>
+		<locator type="xpath" value="//*[@herf='/acs/merchantSetting/toEdit.htm']">新增商户配置</locator>
+		<locator type="xpath" value="//*[@id='merchantId']">merchantId</locator>
+		<locator type="xpath" value="//*[@id='paramKey']">paramKey</locator>
+		<locator type="xpath" value="//*[@id='submitButton']">保存</locator>
+	</page>>
+
+</map>
+

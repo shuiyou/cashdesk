@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="收银台" verbose="5">
+
+    <parameter name = "datasource" value="SinaData.xlsx" />
+    <parameter name = "pagexmlpath" value="SinaPage.xml" />
+    <parameter name = "jira" value="ZFJS-1000" />
+    <parameter name = "jiraName" value="SinaTest" />
+    <parameter name = "userName" value="yinquanwang" />
+
+    <test name="充值"  enabled="false">
+        <classes>
+            <class name="com.weihui.cashdesk.testcase.SinaTest.DepositTest" />
+        </classes>
+    </test>
+
+    <test name="代收"  enabled="false">
+        <classes>
+            <class name="com.weihui.cashdesk.testcase.SinaTest.CollectTradeTest" />
+        </classes>
+    </test>
+
+    <test name="认证信息" enabled="false">
+        <classes>
+            <class name="com.weihui.cashdesk.testcase.SinaTest.AuthMsgTest" />
+        </classes>
+    </test>
+
+    <test name="转账" enabled="false">
+        <classes>
+            <class name="com.weihui.cashdesk.testcase.SinaTest.TransferTest" />
+        </classes>
+    </test>
+
+    <test name="预授权" enabled="false">
+        <classes>
+            <class name="com.weihui.cashdesk.testcase.SinaTest.CreatePreAuthTradeTest" />
+        </classes>
+    </test>
+
+    <test name="个人安全中心" enabled="false" >
+        <classes>
+            <class name="com.weihui.cashdesk.testcase.SinaTest.ShowMemberInfoTest" />
+        </classes>
+    </test>
+
+    <test name="创建标的" enabled="false" >
+        <classes>
+            <class name="com.weihui.cashdesk.testcase.SinaTest.CreateBidInfoTest" />
+        </classes>
+    </test>
+
+
+    <test name="获取子商户链接" enabled="true" >
+        <classes>
+            <class name="com.weihui.cashdesk.testcase.SinaTest.SmerchantUrlGetTest" />
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.weihui.cashdesk.utils.TestNGListener" />
+        <listener class-name="com.weihui.cashdesk.utils.TestReport" />
+    </listeners>
+
+</suite>
